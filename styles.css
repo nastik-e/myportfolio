@@ -1,0 +1,46 @@
+body {width: 100%;}
+header {
+    background-color: #FB3F5C;
+    height: 100px;
+    /* width:1443px; */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+li {
+    padding: 20px;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(71, 68, 68);
+    font-size: 1.3em;
+}
+
+li.left {
+    position: absolute;
+    left: 100px;
+    font-size: 32px;
+    padding-bottom: 0px;   
+}
+
+#triangle {
+    /* background-color: #FB3F5C; */
+    opacity: 50%;
+    /* width: 121px; */
+    /* height: 692px; */
+    border-bottom: 392px solid #FB3F5C;
+    border-right: none;
+    border-left: 350px solid transparent;
+    float:right;
+    margin-top: 70px;
+}
