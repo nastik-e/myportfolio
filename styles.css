@@ -1,8 +1,13 @@
-body {width: 100%;}
+body {
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 header {
     background-color: #FB3F5C;
-    height: 100px;
+    height: 90px;
     /* width:1443px; */
+    width: 100%;
 }
 
 ul {
@@ -13,11 +18,13 @@ ul {
     position: relative;
     box-sizing: border-box;
     margin: 0px;
+    vertical-align: middle;
+    margin: 10px;
 }
 
 li {
-    padding: 20px;
-    
+    padding: 30px;
+    font-weight: bold;
 }
 
 li a {
@@ -28,9 +35,13 @@ li a {
 
 li.left {
     position: absolute;
-    left: 100px;
+    left: 30px;
     font-size: 32px;
     padding-bottom: 0px;   
+}
+
+.blockphoto {
+position: relative;
 }
 
 #triangle {
@@ -38,9 +49,26 @@ li.left {
     opacity: 50%;
     /* width: 121px; */
     /* height: 692px; */
-    border-bottom: 392px solid #FB3F5C;
+    border-bottom: 450px solid #FB3F5C;
     border-right: none;
     border-left: 350px solid transparent;
-    float:right;
-    margin-top: 70px;
+    /* float:right; */
+    margin-top: 40px;
+    z-index: 2;
+    
+}
+
+.photo {
+    width: 350px;
+    height: 450px;
+    border: 1px solid #000;
+    /* float: right; */
+    z-index: 1;
+
+}
+
+.about-me {
+    width: 400px;
+    height: 400px;
+    overflow-wrap: normal;
 }
