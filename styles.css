@@ -1,11 +1,14 @@
 body {
     width: 100%;
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
 }
+
+/* HEADER PART */
 
 header {
     background-color: #FB3F5C;
-    height: 90px;
+    height: fit-content;
     /* width:1443px; */
     width: 100%;
 }
@@ -19,56 +22,118 @@ ul {
     box-sizing: border-box;
     margin: 0px;
     vertical-align: middle;
-    margin: 10px;
 }
 
 li {
-    padding: 30px;
+    /* padding: 30px; */
     font-weight: bold;
 }
 
 li a {
-    text-decoration: none;
     color: rgb(71, 68, 68);
     font-size: 1.3em;
+}
+
+li div {
+    padding: 20px;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: rgb(252, 246, 246);
+    text-shadow: 1px 1px 2px #FB3F5C;
+}
+
+li div:hover {
+    background-color: rgba(235, 173, 182, 50%);
+ 
 }
 
 li.left {
     position: absolute;
     left: 30px;
-    font-size: 32px;
-    padding-bottom: 0px;   
+    font-size: 36px;
+    padding-bottom: 0px;
+    padding: 30px;  
+}
+
+/* END OF HEADER */
+
+.container-fluid {
+padding: 0px;
+height: 600px;
+}
+
+.row {
+    height: 600px;
+}
+ 
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    height: 200px;
+    /* overflow-wrap: normal; */
+    /* padding: 200px; */
+    width: 700px;
+    /* margin: 100px; */
+    font-weight: 300;
+    text-shadow: 3px 3px 2px rgb(169, 167, 167);
+}
+
+.about-me div {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.about-me div span {
+    color: #FB3F5C;
+}
+
+.pinkButton {
+    background-color: #FB3F5C;
+    width: 223px;
+    border: 0px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(169, 167, 167);;
+}
+
+.pinkButton :focus {
+border: 0px;
 }
 
 .blockphoto {
-position: relative;
+    padding: 0px;
+    margin: 0px;
+    position: relative;;
+
 }
 
+
 #triangle {
-    /* background-color: #FB3F5C; */
+    position: absolute;
     opacity: 50%;
-    /* width: 121px; */
-    /* height: 692px; */
-    border-bottom: 450px solid #FB3F5C;
+    width: 121px;
+    height: 420px;
+    border-bottom: 600px solid #FB3F5C;
     border-right: none;
-    border-left: 350px solid transparent;
-    /* float:right; */
-    margin-top: 40px;
-    z-index: 2;
+    border-left: 400px solid transparent;
+    right: 0px;
+    margin-top: 45px;
+    z-index: 1;
     
 }
 
 .photo {
-    width: 350px;
-    height: 450px;
-    border: 1px solid #000;
-    /* float: right; */
-    z-index: 1;
-
-}
-
-.about-me {
-    width: 400px;
-    height: 400px;
-    overflow-wrap: normal;
+    position: absolute;
+    /* width: 375px; */
+    height: 500px;
+    border-radius: 10%;
+    top: 20px;
+    right: 40px;
+    z-index: 2;
+    margin: 80px;
 }
